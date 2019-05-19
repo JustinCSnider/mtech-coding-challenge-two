@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC0DA910228D9F6700D0D2B1 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0DA90F228D9F6700D0D2B1 /* MealTableViewCell.swift */; };
+		CC0DA912228DA00C00D0D2B1 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0DA911228DA00C00D0D2B1 /* MealTableViewController.swift */; };
+		CC0DA915228DA09A00D0D2B1 /* MealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0DA914228DA09A00D0D2B1 /* MealController.swift */; };
+		CC0DA917228DA14000D0D2B1 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0DA916228DA14000D0D2B1 /* Meal.swift */; };
 		CCE443A0228C6C9400873127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4439F228C6C9400873127 /* AppDelegate.swift */; };
-		CCE443A2228C6C9400873127 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE443A1228C6C9400873127 /* ViewController.swift */; };
+		CCE443A2228C6C9400873127 /* CreateMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE443A1228C6C9400873127 /* CreateMealViewController.swift */; };
 		CCE443A5228C6C9400873127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE443A3228C6C9400873127 /* Main.storyboard */; };
 		CCE443A7228C6C9500873127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCE443A6228C6C9500873127 /* Assets.xcassets */; };
 		CCE443AA228C6C9500873127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE443A8228C6C9500873127 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC0DA90F228D9F6700D0D2B1 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		CC0DA911228DA00C00D0D2B1 /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
+		CC0DA914228DA09A00D0D2B1 /* MealController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealController.swift; sourceTree = "<group>"; };
+		CC0DA916228DA14000D0D2B1 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		CCE4439C228C6C9300873127 /* mtech-coding-challenge-two.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mtech-coding-challenge-two.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE4439F228C6C9400873127 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CCE443A1228C6C9400873127 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCE443A1228C6C9400873127 /* CreateMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMealViewController.swift; sourceTree = "<group>"; };
 		CCE443A4228C6C9400873127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCE443A6228C6C9500873127 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCE443A9228C6C9500873127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC0DA913228DA06800D0D2B1 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC0DA914228DA09A00D0D2B1 /* MealController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
 		CCE44393228C6C9300873127 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +70,42 @@
 		CCE4439E228C6C9300873127 /* mtech-coding-challenge-two */ = {
 			isa = PBXGroup;
 			children = (
+				CCE443B3228C6DBF00873127 /* Views and Assets */,
+				CCE443B2228C6DBE00873127 /* Controllers */,
+				CCE443B1228C6DBA00873127 /* Models */,
 				CCE4439F228C6C9400873127 /* AppDelegate.swift */,
-				CCE443A1228C6C9400873127 /* ViewController.swift */,
-				CCE443A3228C6C9400873127 /* Main.storyboard */,
-				CCE443A6228C6C9500873127 /* Assets.xcassets */,
-				CCE443A8228C6C9500873127 /* LaunchScreen.storyboard */,
 				CCE443AB228C6C9500873127 /* Info.plist */,
 			);
 			path = "mtech-coding-challenge-two";
+			sourceTree = "<group>";
+		};
+		CCE443B1228C6DBA00873127 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC0DA90F228D9F6700D0D2B1 /* MealTableViewCell.swift */,
+				CC0DA916228DA14000D0D2B1 /* Meal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CCE443B2228C6DBE00873127 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC0DA913228DA06800D0D2B1 /* ModelControllers */,
+				CCE443A1228C6C9400873127 /* CreateMealViewController.swift */,
+				CC0DA911228DA00C00D0D2B1 /* MealTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CCE443B3228C6DBF00873127 /* Views and Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CCE443A3228C6C9400873127 /* Main.storyboard */,
+				CCE443A8228C6C9500873127 /* LaunchScreen.storyboard */,
+				CCE443A6228C6C9500873127 /* Assets.xcassets */,
+			);
+			path = "Views and Assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +140,14 @@
 				TargetAttributes = {
 					CCE4439B228C6C9300873127 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,8 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCE443A2228C6C9400873127 /* ViewController.swift in Sources */,
+				CCE443A2228C6C9400873127 /* CreateMealViewController.swift in Sources */,
 				CCE443A0228C6C9400873127 /* AppDelegate.swift in Sources */,
+				CC0DA915228DA09A00D0D2B1 /* MealController.swift in Sources */,
+				CC0DA912228DA00C00D0D2B1 /* MealTableViewController.swift in Sources */,
+				CC0DA917228DA14000D0D2B1 /* Meal.swift in Sources */,
+				CC0DA910228D9F6700D0D2B1 /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +338,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "mtech-coding-challenge-two/mtech-coding-challenge-two.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JHB3FKAQY;
 				INFOPLIST_FILE = "mtech-coding-challenge-two/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,7 +357,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "mtech-coding-challenge-two/mtech-coding-challenge-two.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6JHB3FKAQY;
 				INFOPLIST_FILE = "mtech-coding-challenge-two/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
